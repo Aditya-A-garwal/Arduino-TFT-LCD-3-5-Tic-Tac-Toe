@@ -8,7 +8,7 @@
 
 MCUFRIEND_kbv tft;
 
-TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);;
+TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
 
 int16_t player = NONE;
 int16_t turn = CROSS;
