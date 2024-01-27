@@ -36,7 +36,7 @@ pio run --target upload
 
 ## Building/Uploading With Arduino IDE
 
-Create a new sketch and copy the contents of ```src/main.cpp``` from this repository into the default ```.ino``` file. Create a new tab/file in the IDE named ```constants.h``` and copy the contents of ```src/constants.h``` from this repository into this file.
+Create a new sketch and copy the contents of [```src/main.cpp```](/src/main.cpp) from this repository into the default ```.ino``` file. Create a new tab/file in the IDE named ```constants.h``` and copy the contents of [```src/constants.h```](/src/constants.h) from this repository into this file.
 
 Install the Adafruit Touch Screen Library and Adafruit GFX Library from the Library Manager (under *Sketch>Include Library>Manage Libraries...*)
 
@@ -46,7 +46,7 @@ After this, you can Build and Upload the program as usual.
 
 ## Calibrating the Touchscreen
 
-Run the program given in [this](https://github.com/Aditya-A-garwal/Arduino-TFT-3-5-Touch-Calibration) repository to calibrate the display. The display should print the values of 4 constants to the Serial Monitor. Copy and paste these values in ```src/constants.h``` to calibrate the touchscreen.
+Run the program given in [this](https://github.com/Aditya-A-garwal/Arduino-TFT-3-5-Touch-Calibration) repository to calibrate the display. The display should print the values of 4 constants to the Serial Monitor. Copy and paste these values in [```src/constants.h```](/src/constants.h) to calibrate the touchscreen.
 
 ## Using the Example
 
@@ -66,7 +66,7 @@ Some common problems and their solutions -
 |Problem|Solution|
 |-|-|
 |Display stays white after uploading program|Non-Standard Driver (not ILI9486)|
-|Display not responding after touch|Try changing the order of the touch pins in ```src/constants.h``` file, i.e. swap the values of ```XP```, ```YP```, ```XM``` and ```YM```|
+|Display not responding after touch|Try changing the order of the touch pins in [```src/constants.h```](/src/constants.h) file, i.e. swap the values of ```XP```, ```YP```, ```XM``` and ```YM```|
 |Touched point and display response not matching|Try calibrating the display using the instructions given [here](https://github.com/Aditya-A-garwal/Arduino-TFT-3-5-Touch-Calibration)|
 |Compilation issues related to SPI|Update the Arduino IDE version and/or install the SPI library|
 |Display Flickering/Arduino is reset automatically|Faulty Power Supply/Cable|
