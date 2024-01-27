@@ -56,6 +56,9 @@ After an option is selected, the game begins. X moves first, followed by O, with
 
 When a game is over, a line is drawn over the winning 3 pieces, followed by a game-over screen that announces the winner.
 
+For now, the moves chosen by the Arduino (opponent) are randomized, i.e. it will not follow a winning strategy. This means that if a player has a winning move that can be blocked by the Arduino, it may not necessarily pick that move. This is expected behavior.
+Additionally, the random number generator always begins with the same seed, i.e. two games where the player plays the same moves will always end the same.
+
 ## Troubleshooting
 
 Some common problems and their solutions -
