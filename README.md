@@ -1,13 +1,13 @@
-# TicTacToe On a 3.5" LCD Touchscreen With Arduino UNO R3/R4
+# TicTacToe On a 3.5" TFT LCD Touchscreen With Arduino UNO R3/R4
 
-![GitHub License](https://img.shields.io/github/license/Aditya-A-garwal/Arduino-TFT-3-5-Tic-Tac-Toe)
-![GitHub forks](https://img.shields.io/github/forks/Aditya-A-garwal/Arduino-TFT-3-5-Tic-Tac-Toe?style=flat-square&color=blue)
-![GitHub Repo stars](https://img.shields.io/github/stars/Aditya-A-garwal/Arduino-TFT-3-5-Tic-Tac-Toe?style=flat-square&color=blue)
-![GitHub issues](https://img.shields.io/github/issues-raw/Aditya-A-garwal/Arduino-TFT-3-5-Tic-Tac-Toe?style=flat-square&color=indianred)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Aditya-A-garwal/Arduino-TFT-3-5-Tic-Tac-Toe?style=flat-square)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Aditya-A-garwal/Arduino-TFT-3-5-Tic-Tac-Toe?style=flat-square&color=indianred)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Aditya-A-garwal/Arduino-TFT-3-5-Tic-Tac-Toe?style=flat-square)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Aditya-A-garwal/Arduino-TFT-3-5-Tic-Tac-Toe/build.yml?style=flat-square)
+![GitHub License](https://img.shields.io/github/license/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Tic-Tac-Toe)
+![GitHub forks](https://img.shields.io/github/forks/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Tic-Tac-Toe?style=flat-square&color=blue)
+![GitHub Repo stars](https://img.shields.io/github/stars/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Tic-Tac-Toe?style=flat-square&color=blue)
+![GitHub issues](https://img.shields.io/github/issues-raw/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Tic-Tac-Toe?style=flat-square&color=indianred)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Tic-Tac-Toe?style=flat-square)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Tic-Tac-Toe?style=flat-square&color=indianred)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Tic-Tac-Toe?style=flat-square)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Tic-Tac-Toe/build.yml?style=flat-square)
 
 ## Overview
 
@@ -46,7 +46,7 @@ After this, you can Build and Upload the program as usual.
 
 ## Calibrating the Touchscreen
 
-Run the program given in [this](https://github.com/Aditya-A-garwal/Arduino-TFT-3-5-Touch-Calibration) repository to calibrate the display. The display should print the values of 4 constants to the Serial Monitor. Copy and paste these values in [```src/constants.h```](/src/constants.h) to calibrate the touchscreen.
+Run the program given in [this](https://github.com/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Touch-Calibration) repository to calibrate the display. The display should print the values of 4 constants to the Serial Monitor. Copy and paste these values in [```src/constants.h```](/src/constants.h) to calibrate the touchscreen.
 
 ## Using the Example
 
@@ -67,6 +67,6 @@ Some common problems and their solutions -
 |-|-|
 |Display stays white after uploading program|Non-Standard Driver (not ILI9486)|
 |Display not responding after touch|Try changing the order of the touch pins in [```src/constants.h```](/src/constants.h) file, i.e. swap the values of ```XP```, ```YP```, ```XM``` and ```YM```|
-|Touched point and display response not matching|Try calibrating the display using the instructions given [here](https://github.com/Aditya-A-garwal/Arduino-TFT-3-5-Touch-Calibration)|
+|Touched point and display response not matching|Try calibrating the display using the instructions given [here](https://github.com/Aditya-A-garwal/Arduino-TFT-LCD-3-5-Touch-Calibration)|
 |Compilation issues related to SPI|Update the Arduino IDE version and/or install the SPI library|
 |Display Flickering/Arduino is reset automatically|Faulty Power Supply/Cable|
