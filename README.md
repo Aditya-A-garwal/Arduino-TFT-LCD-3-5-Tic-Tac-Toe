@@ -24,6 +24,9 @@ Most 3.5" TFT LCD Touch displays use the ILI9486 Display Driver and include a re
 
 The program has been written using PlatformIO, and has been tested on the [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3/), [Arduino UNO R4 Minima](https://docs.arduino.cc/hardware/uno-r4-minima/) & [Arduino UNO R4 WiFi](https://docs.arduino.cc/hardware/uno-r4-wifi/).
 
+> [!TIP]
+> A detailed tutorial on how to use this repository is available at https://dumblebots.com/2024/08/05/using-3-5-tft-lcd-display-ili9486-arduino-part-6-tictactoe-game/. The tutorial includes a comprehensive explanation of the code and how to use it.
+
 ## Building/Uploading With PlatformIO
 
 Since this project has been written using PlatformIO by default, simply run the following commands to fetch the libraries, build the project and upload the program -
@@ -52,9 +55,17 @@ Run the program given in [this](https://github.com/Aditya-A-garwal/Arduino-TFT-L
 
 As soon as the program is uploaded, the display should turn black and a menu should appear, prompting the player to select between X and O.
 
+|![Image of starting menu on 3.5 inch TFT LCD touchscreen and Arduino](images/start_menu.png)|
+|:-:|
+|Starting Menu|
+
 After an option is selected, the game begins. X moves first, followed by O, with the process repeating till a tie occurs or one of the players wins.
 
 When a game is over, a line is drawn over the winning 3 pieces, followed by a game-over screen that announces the winner.
+
+|![Image of arduino winning as X on 3.5 inch TFT LCD touchscreen and Arduino](images/arduino_x.png)|![Image of player winning as O on 3.5 inch TFT LCD touchscreen and Arduino](images/player_o.png)|![Image of game draw on 3.5 inch TFT LCD touchscreen and Arduino](images/game_draw.png)|
+|:-:|:-:|:-:|
+|X wins|O wins|Draw|
 
 For now, the moves chosen by the Arduino (opponent) are randomized, i.e. it will not follow a winning strategy. This means that if a player has a winning move that can be blocked by the Arduino, it may not necessarily pick that move. This is expected behavior.
 Additionally, the random number generator always begins with the same seed, i.e. two games where the player plays the same moves will always end the same.
